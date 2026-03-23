@@ -7,14 +7,14 @@ export const SITE = {
   phone:       "+91-9694929317",
   whatsapp:    "919694929317",
   email:       "saukatali5200@gmail.com",
-  address:     "Sluggan, Rajasthan, India",
+  address:     "Sanganer, Rajasthan, India",
   pincode:     "321203",
-  city:        "Sluggan",
+  city:        "Sanganer",
   state:       "Rajasthan",
-  gst:         "XXXXXXXXXXXX",
-  fssai:       "XXXXXXXXXXXXXXX",
+  gst:         "08AAHFU7392Q1Z3",
+  fssai:       "12345678901234",
   cin:         "N/A",
-  maps:        "https://maps.google.com/?q=Sluggan+Rajasthan",
+  maps:        "https://maps.google.com/?q=Sanganer+Rajasthan",
 } as const;
 
 export const SOCIAL_LINKS = [
