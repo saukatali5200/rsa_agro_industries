@@ -26,7 +26,7 @@ export default function ProductsPage() {
             Our <span className="text-gradient">Products</span>
           </h1>
           <p className="theme-text-secondary text-xl leading-relaxed">
-            Pure cold-pressed mustard oil in every size, and high-protein oil cake for livestock. All dispatched directly from our mill in Sluggan.
+            Pure cold-pressed mustard oil in every size, and high-protein oil cake for livestock. All dispatched directly from our mill in Sanganer.
           </p>
         </div>
       </section>

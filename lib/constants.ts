@@ -2,7 +2,7 @@ export const SITE = {
   name:        "RSA Agro Industries",
   owner:       "RSA Agro Industries",
   tagline:     "Manufacturer of Pure Oils & Oil Cake 🌾",
-  description: "RSA Agro Industries, Sluggan — trusted manufacturer of pure oils and oil cake. FSSAI certified. Wholesale & retail supply across India.",
+  description: "RSA Agro Industries, Sanganer — trusted manufacturer of pure oils and oil cake. FSSAI certified. Wholesale & retail supply across India.",
   url:         "https://rsaagro.com",
   phone:       "+91-9694929317",
   whatsapp:    "919694929317",

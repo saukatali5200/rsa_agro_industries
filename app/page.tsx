@@ -61,7 +61,7 @@ export default function HomePage() {
                 Mustard Oil
               </h1>
               <p className="text-lg leading-relaxed mb-4 animate-slide-up delay-100" style={{ color: "var(--text-secondary)" }}>
-                Direct from our mill in <strong style={{ color: "var(--text-primary)" }}>Sluggan, Rajasthan</strong>. Traditional extraction, zero compromises, unbeatable purity.
+                Direct from our mill in <strong style={{ color: "var(--text-primary)" }}>Sanganer, Rajasthan</strong>. Traditional extraction, zero compromises, unbeatable purity.
               </p>
               <ul className="grid grid-cols-2 gap-2 mb-10 animate-slide-up delay-200">
                 {PROMISES.map((p) => (

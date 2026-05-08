@@ -8,7 +8,7 @@ interface Message {
   content: string;
 }
 
-const SYSTEM_PROMPT = `You are a helpful customer service assistant for ${SITE.name}, a trusted oil manufacturer and supplier based in Sluggan, Rajasthan, India.
+const SYSTEM_PROMPT = `You are a helpful customer service assistant for ${SITE.name}, a trusted oil manufacturer and supplier based in Sanganer, Rajasthan, India.
 
 About the business:
 - Owner: ${SITE.owner}
