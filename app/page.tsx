@@ -319,13 +319,13 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold theme-text mb-3">
               Follow Us on Social Media
             </h2>
-            <p className="theme-text-secondary text-sm sm:text-base md:text-lg max-w-xl mx-auto">
+            <p className="theme-text-secondary text-sm sm:text-base md:text-lg mx-auto">
               Get updates, tips, and behind-the-scenes from our mill. Latest offers,
               recipes & more!
             </p>
           </div>
-          <div className="max-w-2xl mx-auto mb-6 sm:mb-8">
-            <SocialLinks variant="full" className="grid-cols-1 sm:grid-cols-2" />
+          <div className="max-w-6xl mx-auto mb-6 sm:mb-8">
+            <SocialLinks variant="full" className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" />
           </div>
           <div className="text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl theme-card text-xs sm:text-sm theme-text-secondary">
