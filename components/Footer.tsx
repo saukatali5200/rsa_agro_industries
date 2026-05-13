@@ -90,7 +90,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t theme-divider mt-10 pt-6 flex flex-col items-center gap-3 md:flex-row md:justify-between">
+          <div className="border-t theme-divider mt-10 pt-6 flex flex-col items-center gap-3 md:flex-row md:justify-between px-10">
           <p className="theme-text-muted text-xs text-center">© {currentYear} {SITE.name}. All rights reserved.</p>
           <div className="flex items-center gap-4 text-xs theme-text-muted">
             <span>GSTIN: {SITE.gst}</span>
