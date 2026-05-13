@@ -241,7 +241,7 @@ export default function AboutPage() {
             <h2 className="text-3xl md:text-4xl font-extrabold theme-text mb-4">
               What We Stand For
             </h2>
-            <p className="theme-text-secondary text-lg max-w-2xl mx-auto">
+            <p className="theme-text-secondary text-lg max-w-6xl mx-auto">
               Principles that guide every decision — from sourcing seeds to
               delivering the final product.
             </p>

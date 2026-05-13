@@ -195,7 +195,7 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold theme-text mb-3">
               Quality You Can Taste
             </h2>
-            <p className="theme-text-secondary text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
+            <p className="theme-text-secondary text-sm sm:text-base md:text-lg max-w-6xl mx-auto">
               Traditional cold-press methods with modern quality controls — mustard oil
               that is pure, potent, and nutritious.
             </p>
@@ -280,7 +280,7 @@ export default function HomePage() {
                   "radial-gradient(ellipse at 30% 50%, var(--accent-subtle), transparent 60%)",
               }}
             />
-            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 items-center">
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-[1.6fr_0.7fr] gap-6 sm:gap-10 items-center">
               <div className="text-center lg:text-left">
                 <span className="theme-badge inline-flex mb-4">Bulk & Wholesale</span>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold theme-text mb-3">
