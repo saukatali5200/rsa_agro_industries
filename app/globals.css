@@ -344,14 +344,17 @@
    UTILITIES
 ═══════════════════════════════════════════════════════════════ */
 @layer utilities {
-  .section-pad { padding-top: 3.5rem; padding-bottom: 3.5rem; }
-  @media (min-width: 768px) { .section-pad { padding-top: 5rem; padding-bottom: 5rem; } }
-  /* xs breakpoint for very small mobile */
+  .section-pad { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  @media (min-width: 640px) { .section-pad { padding-top: 3.5rem; padding-bottom: 3.5rem; } }
+  @media (min-width: 768px) { .section-pad { padding-top: 4.5rem; padding-bottom: 4.5rem; } }
+  /* xs breakpoint for very small mobile (480px) */
   @media (min-width: 480px) {
     .xs\:flex-row { flex-direction: row; }
     .xs\:w-auto { width: auto; }
+    .xs\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
-  .container { max-width: 1280px; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+  .container { max-width: 1280px; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+  @media (min-width: 640px) { .container { padding-left: 1.5rem; padding-right: 1.5rem; } }
   .text-gradient {
     background: var(--gradient) !important;
     -webkit-background-clip: text !important;

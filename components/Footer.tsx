@@ -10,8 +10,8 @@ export default function Footer() {
 
   return (
     <footer style={{ background: "var(--bg-surface)", borderTop: "1px solid var(--border-subtle)" }}>
-      <div className="container mx-auto px-4 max-w-7xl py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="container mx-auto max-w-7xl py-8 sm:py-10 md:py-12">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
 
           {/* Brand */}
           <div className="lg:col-span-1">

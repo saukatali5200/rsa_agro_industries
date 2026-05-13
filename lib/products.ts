@@ -6,6 +6,7 @@
 import { Product } from "@/types";
 
 export const PRODUCTS: Product[] = [
+  // ── OIL PRODUCTS ────────────────────────────────────────────
   {
     id: "mustard-oil-1l",
     name: "Mustard Oil 1L Bottle",
@@ -17,11 +18,11 @@ export const PRODUCTS: Product[] = [
     description:
       "Pure cold-pressed mustard oil packed in food-grade 1-litre HDPE bottles. Ideal for household cooking with authentic pungent aroma and rich flavour.",
     features: [
-      "100% pure oils & oil cake",
-      "Cold-pressed extraction",
+      "100% pure cold-pressed oil",
       "Food-grade HDPE bottle",
       "Tamper-proof seal",
       "FSSAI certified",
+      "Authentic pungent aroma",
     ],
     inStock: true,
     gstRate: 5,
@@ -37,7 +38,7 @@ export const PRODUCTS: Product[] = [
     packaging: "5L HDPE Jar",
     category: "oil",
     description:
-      "Economy 5-litre mustard oil jar perfect for medium-sized families and small restaurants. Same quality as our smaller bottles at a better per-litre value.",
+      "Economy 5-litre mustard oil jar perfect for medium-sized families and small restaurants. Same quality at better per-litre value.",
     features: [
       "5-litre economy pack",
       "Pure cold-pressed oil",
@@ -81,7 +82,7 @@ export const PRODUCTS: Product[] = [
     packaging: "200L Barrel / Tanker",
     category: "oil",
     description:
-      "Industrial bulk mustard oil supplied in 200-litre barrels or by tanker. Best rates for large-scale distributors, factories, and food processors.",
+      "Industrial bulk mustard oil in 200-litre barrels or by tanker. Best rates for large-scale distributors, factories, and food processors.",
     features: [
       "Minimum order 200 litres",
       "Available in barrels or tanker",
@@ -94,10 +95,12 @@ export const PRODUCTS: Product[] = [
     hsnCode: "1514",
     image: "/images/bulk-mustard-oil.jpg",
   },
+
+  // ── OIL CAKE PRODUCTS ───────────────────────────────────────
   {
-    id: "oil-cake",
-    name: "Oil Cake (Cattle Feed)",
-    slug: "oil-cake",
+    id: "oil-cake-50kg",
+    name: "Mustard Oil Cake 50kg",
+    slug: "oil-cake-50kg",
     price: 28,
     unit: "per kg",
     packaging: "50kg Gunny Bag",
@@ -116,6 +119,72 @@ export const PRODUCTS: Product[] = [
     hsnCode: "2306",
     image: "/images/oil-cake.jpg",
   },
+  {
+    id: "oil-cake-25kg",
+    name: "Mustard Oil Cake 25kg",
+    slug: "oil-cake-25kg",
+    price: 30,
+    unit: "per kg",
+    packaging: "25kg Gunny Bag",
+    category: "oilcake",
+    description:
+      "Premium mustard oil cake in convenient 25kg bags. Perfect for small farms and dairy owners. Boosts milk production and livestock health naturally.",
+    features: [
+      "25kg convenient bag",
+      "Boosts milk production",
+      "No synthetic additives",
+      "Rich in omega-3 fatty acids",
+      "FSSAI compliant",
+    ],
+    inStock: true,
+    gstRate: 0,
+    hsnCode: "2306",
+    image: "/images/oil-cake.jpg",
+  },
+  {
+    id: "oil-cake-pellets",
+    name: "Oil Cake Pellets",
+    slug: "oil-cake-pellets",
+    price: 32,
+    unit: "per kg",
+    packaging: "50kg Woven Bag",
+    category: "oilcake",
+    description:
+      "Compressed mustard oil cake pellets for easy handling and feeding. Uniform size ensures consistent nutrition. Preferred by modern dairy farms.",
+    features: [
+      "Pelletized for easy feeding",
+      "Uniform nutritional density",
+      "Reduced wastage",
+      "Long shelf life",
+      "Ideal for large dairy farms",
+    ],
+    inStock: true,
+    gstRate: 0,
+    hsnCode: "2306",
+    image: "/images/oil-cake.jpg",
+  },
+  {
+    id: "oil-cake-bulk",
+    name: "Bulk Oil Cake Supply",
+    slug: "oil-cake-bulk",
+    price: 25,
+    unit: "per kg",
+    packaging: "1 Tonne+ Bulk",
+    category: "oilcake",
+    description:
+      "Wholesale bulk oil cake supply for large dairy farms, poultry units, and feed manufacturers. Best pricing on 1-tonne or more orders. Direct from mill.",
+    features: [
+      "Minimum 1 tonne order",
+      "Lowest per-kg pricing",
+      "Custom packaging available",
+      "Pan-India delivery",
+      "Direct mill pricing",
+    ],
+    inStock: true,
+    gstRate: 0,
+    hsnCode: "2306",
+    image: "/images/oil-cake.jpg",
+  },
 ];
 
 /** Helper: find product by slug */
@@ -126,4 +195,12 @@ export function getProductBySlug(slug: string): Product | undefined {
 /** Helper: filter products by category */
 export function getProductsByCategory(category: Product["category"]): Product[] {
   return PRODUCTS.filter((p) => p.category === category);
+}
+
+/** Helper: get first N products by category */
+export function getTopProductsByCategory(
+  category: Product["category"],
+  limit = 4
+): Product[] {
+  return PRODUCTS.filter((p) => p.category === category).slice(0, limit);
 }
